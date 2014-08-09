@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+title=$@
+whitelist='A-Za-z0-9# '
+dash_characters='# '
+prefix=$(date "+%Y-%m-%d")
+suffix=$(echo $title | sed -E "s/[^$whitelist]//g" | sed -E "s/[$dash_characters]/-/g" | tr '[:upper:]' '[:lower:]')
+frontmatter="---\nlayout: post\ntitle: \"$title\"\npublished: false\n---\n\n### $title"
+filename="_posts/$prefix-$suffix.markdown"
+
+if [ -f $filename ] ; then
+  echo "Stopping to avoid overwritng $filename"
+  exit 1
+else
+  echo -e $frontmatter > $filename
+fi
