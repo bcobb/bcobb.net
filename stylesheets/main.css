@@ -30,19 +30,13 @@ p {
 }
 
 a {
-	background: yellow;
-  color: #000;
+  color: cornflowerblue;
 	padding: 2px;
 	text-decoration: none;
 }
 
-a:hover {
-	background: white;
-  color: #000;
-}
-
 a:visited {
-  color: #000;
+  color: slateblue;
 }
 
 table {
@@ -75,7 +69,8 @@ li.index a:hover {
 
 .site {
   font-size: 110%;
-  width: 44em;
+  width: 80%;
+  max-width: 1024px;
   margin: 1em auto 2em auto;
   line-height: 1.5em;
 }
