@@ -15,14 +15,18 @@ body {
 }
 
 h1 {
-  font: 30px/34px 'DejaVuSerifCondensed-Bold', Arial, sans-serif;letter-spacing: 0;
+  letter-spacing: 0;
 	margin-bottom: .4em;
 }
 
-h2{
-	font: 18px/22px 'DejaVuSerifCondensed-Bold', Arial, sans-serif;letter-spacing: 0;
-	margin-bottom: 2em;
-	margin-top: 2em;
+h2 {
+  letter-spacing: 0;
+	margin-bottom: .5em;
+	margin-top: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
 }
 
 p {
@@ -31,7 +35,7 @@ p {
 
 a {
   color: cornflowerblue;
-	padding: 2px;
+	padding: 2px 0;
 	text-decoration: none;
 }
 
@@ -60,13 +64,6 @@ ul.posts span {
   font-size: 80%;
 }
 
-li.index a {
-  background: white;
-}
-li.index a:hover {
-  background: yellow;
-}
-
 .site {
   font-size: 110%;
   width: 80%;
@@ -77,17 +74,17 @@ li.index a:hover {
 
 .title {
   color: #000;
-  margin: 0;
-  font: 28px/32px 'DejaVuSerifCondensed-Bold', Arial, sans-serif;letter-spacing: 0;
+  font: 28px/32px Georgia, serif;
+  letter-spacing: 0;
+}
+
+.intro {
+  border-bottom: 4px solid #eee;
 }
 
 .site .title a {
-  color: #a00;
+  color: chocolate;
   text-decoration: none;
-}
-
-.site .title a:hover {
-  color: black;
 }
 
 .site .title a.extra {
@@ -149,16 +146,10 @@ blockquote{
 }
 
 /* Fonts */
-@font-face {
-	font-family: 'DejaVuSerifCondensed-Bold';
-	src: url('DejaVuSerifCondensed-Bold.eot');
-	src: local('DejaVuSerifCondensed-Bold'), local('DejaVuSerifCondensed-Bold'), url('DejaVuSerifCondensed-Bold.woff') format('woff'), url('DejaVuSerifCondensed-Bold.ttf') format('truetype'), url('DejaVuSerifCondensed-Bold.svg#DejaVuSerifCondensed-Bold') format('svg');
-}
 
 .index-date{
-  font-size:90%;
+  display: inline-block;
   font-style:italic;
-  float:left;
   width: 120px;
 }
 
@@ -166,4 +157,15 @@ blockquote{
   font-style:italic;
   font-size:85%;
   margin-bottom: .4em;
+}
+
+@media screen and (max-width: 480px) {
+  ul.posts .index-date {
+    display: block;
+  }
+
+  ul.posts a {
+    display: block;
+    margin-left: 1em;
+  }
 }
