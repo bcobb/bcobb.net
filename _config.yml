@@ -1,5 +1,5 @@
 markdown: rdiscount
-pygments: true
-name: michaelrbernste.in
-description: Michael R. Bernstein's Personal Blog
-url: http://michaelrbernste.in
+highlighter: pygments
+name: bcobb.net
+description: Brian Cobb writes about software.
+url: http://bcobb.net
