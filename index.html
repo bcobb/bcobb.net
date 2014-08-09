@@ -2,13 +2,13 @@
 layout: default
 title: home
 ---
-<p>
-  This blog is a fork of <a href="http://michaelrbernste.in">Michael R. Bernstein's blog</a>. When I've written more than a handful of posts, it will, like his, be broken into sections. Unlike his, those posts will be written by <a href="/about.html">me</a>.
-</p>
+<div class="intro">
+  <p>
+    This blog is a fork of <a href="http://michaelrbernste.in">Michael R. Bernstein's blog</a>. When I've written more than a handful of posts, it will, like his, be broken into sections. Unlike his, those posts will be written by <a href="/about.html">me</a>.
+  </p>
+</div>
 
-<h2>Entries</h2>
-<div class="lead"></div>
-<ul class = "posts">
+<ul class="posts">
 {% for post in site.posts %}
     {% if post.published %}
     <li class="index">
