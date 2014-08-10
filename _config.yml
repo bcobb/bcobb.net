@@ -3,3 +3,8 @@ highlighter: pygments
 name: bcobb.net
 description: Brian Cobb writes about software.
 url: http://bcobb.net
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin/
+  - README
