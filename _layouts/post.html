@@ -11,7 +11,12 @@
   <div class="site">
     <h1 class="title"><a href="/">bcobb</a></h1>
 
-    <div id="post">{{ content }}</div>
+    <div id="post">
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+
+      {{ content }}
+    </div>
 
     {% include footer.html %}
   </div>

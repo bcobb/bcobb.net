@@ -117,7 +117,7 @@ ul.posts span {
 #post pre {
   border: 1px dashed #ccc;
   background-color: #fff;
-  padding: 0 .4em;
+  padding: .4em;
   margin-top: .5em;
   margin-bottom: .5em;
 }
@@ -143,6 +143,11 @@ blockquote{
   font-style:italic;
   line-height: 180%;
   font-size: 95%;
+}
+
+hr {
+  border-style: solid;
+  border-color: #ddd;
 }
 
 /* Fonts */
