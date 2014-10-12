@@ -3,5 +3,4 @@
 set -e
 
 bundle exec jekyll build
-rsync -avz _site/ bcobb.net:/home/bcobb/bcobb.net/stage
-ssh bcobb.net 'cd /home/bcobb && rm -rf bcobb.net/old && mv bcobb.net/{current,old} && mv bcobb.net/{stage,current}'
+rsync -cavz --delete _site/ bcobb.net:/home/bcobb/bcobb.net/current
