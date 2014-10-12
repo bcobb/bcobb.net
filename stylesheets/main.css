@@ -16,7 +16,6 @@ body {
 
 h1 {
   letter-spacing: 0;
-	margin-bottom: .4em;
 }
 
 h2 {
@@ -27,6 +26,7 @@ h2 {
 
 h1, h2, h3, h4 {
   font-weight: normal;
+	margin-bottom: .5em;
 }
 
 p {
@@ -128,6 +128,7 @@ ul.posts span {
 }
 
 #post code {
+  font-family: "Ubuntu Mono", monospace;
   border: 1px solid #ddd;
   background-color: #fff;
   font-size: 80%;
@@ -135,6 +136,7 @@ ul.posts span {
 }
 
 #post pre code {
+  font-family: "Ubuntu Mono", monospace;
   border: none;
 }
 
@@ -147,6 +149,8 @@ blockquote{
   font-style:italic;
   line-height: 180%;
   font-size: 95%;
+  padding-left: 1em;
+  border-left: .5em solid #efefef;
 }
 
 hr {
