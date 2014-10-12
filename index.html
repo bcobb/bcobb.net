@@ -3,20 +3,6 @@ layout: default
 title: home
 ---
 
-{% if site.categories.posts.size > 0 %}
-  <h2>General Archive</h2>
-
-  <ul class="posts">
-  {% for post in site.categories.posts %}
-      {% if post.published %}
-      <li class="index">
-        <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endif %}
-  {% endfor %}
-  </ul>
-{% endif %}
-
 <h2>Flapjacks</h2>
 
 <p class="lead">Flapjacks are posts that originally appeared on the <a href="http://gofullstack.com">FullStack</a> internal blog. They appear here effectively unchanged.</p>

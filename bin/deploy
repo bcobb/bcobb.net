@@ -2,5 +2,5 @@
 
 set -e
 
-bundle exec jekyll build
+bundle exec jekyll build -D
 rsync -cavz --delete _site/ bcobb.net:/home/bcobb/bcobb.net/current

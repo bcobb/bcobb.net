@@ -4,7 +4,6 @@ title: "Hacker School Read Along: On Understanding Data Abstraction"
 permalink: hacker-school-read-along-on-understanding-data-abstraction
 category: posts
 date: 2014-10-12 11:33
-published: true
 ---
 
 This week's Hacker School Paper of the Week is [William Cook](http://www.cs.utexas.edu/~wcook/)'s [_On Understanding Data Abstraction, Revisited_](http://www.cs.utexas.edu/~wcook/Drafts/2009/essay.pdf).
