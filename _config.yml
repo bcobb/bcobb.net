@@ -2,7 +2,7 @@ markdown: rdiscount
 highlighter: pygments
 name: bcobb.net
 description: Brian Cobb writes about software.
-url: http://bcobb.net
+url: http://www.bcobb.net
 exclude:
   - Gemfile
   - Gemfile.lock
