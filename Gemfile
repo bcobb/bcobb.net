@@ -1,5 +1,3 @@
 source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'rdiscount'
-gem 'rb-gsl'
+gem 'github-pages'
