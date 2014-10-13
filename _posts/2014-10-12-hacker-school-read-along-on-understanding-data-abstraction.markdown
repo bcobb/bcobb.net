@@ -16,7 +16,7 @@ The paper is an exploration of the terms "object" and "abstract data type," and 
 ### Data Abstraction in Ruby
 
 Here is a slightly wacky Ruby implementation of the Set-as-objects shown in the paper, one which does not expose the notion of a class to its users.
-I wanted to emphasize not only that the notion of a class is not important, but also demonstrate that it's possible to abstract over data without using instance variables.
+I wanted to emphasize not only that the notion of a class is not important, but also demonstrate that it's possible to abstract over data in Ruby without using instance variables.
 This code, along with a version that does use named classes, is [on GitHub](https://github.com/bcobb/on_understanding_data_abstraction_revisited-ruby).
 
 ```ruby
