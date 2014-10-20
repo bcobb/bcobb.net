@@ -18,11 +18,10 @@ Here's how I would like to break down the steps to dev-prod parity, at least for
 
 1.  Carve production into "public" recipes by the services exposed in the notional cluster. For a Rails app that runs jobs with Sidekiq, this might look like: web, worker, postgresql, redis.
 2.  A development box is simply a node whose run list includes all of those recipes, and whose data bag configures the recipe to be development-friendly:
-
-    *   Rails should be configured to reload code
-    *   "deploys" happen by syncing files on the host the files on the guest automatically
-    *   bundler installs all gems so that we can take our existing testing workflow and wrap it in `vagrant ssh -c` commands
-    *   probably some other stuff
+  * Rails should be configured to reload code
+  * "deploys" happen by syncing files on the host the files on the guest automatically
+  * bundler installs all gems so that we can take our existing testing workflow and wrap it in `vagrant ssh -c` commands
+  * probably some other stuff
 
 3.  A production cluster is a set of nodes (possibly just one node) that are configured for production (e.g. deploy with git and automatically run migrations).
 

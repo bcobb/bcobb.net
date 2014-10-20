@@ -18,36 +18,40 @@ As an aside, if you're not familiar, *eager loading* means that instead of just 
 
 The first approach is a direct test. Recall from the aside: when we *don't* eager load Authors, we issue one query per post author. That is:
 
-    posts = Post.all.to_a # one query, returns an array of Posts
-    posts[0].author # one query, returns an Author if it exists, nil otherwise
-    posts[1].author # one query, returns an Author if it exists, nil otherwise
-    # etc
+```ruby
+posts = Post.all.to_a # one query, returns an array of Posts
+posts[0].author # one query, returns an Author if it exists, nil otherwise
+posts[1].author # one query, returns an Author if it exists, nil otherwise
+# etc
+```
 
 
 One can imagine a parallel, cruel universe where Author records are frequently deleted without warning, causing our `posts[i].author` lines above to sometimes (and unexpectedly) return `nil`. As programmers, we can create a facsimile of such a universe, and use it to verify that we've eager loaded authors:
 
-    posts = Post.includes(:author).all.to_a # the includes is the secret sauce
+```ruby
+posts = Post.includes(:author).all.to_a # the includes is the secret sauce
 
-    Author.delete_all # evil is afoot!
+Author.delete_all # evil is afoot!
 
-    posts[0].author # no query, returns an Author if it existed for eager loading, nil otherwise
-    posts[1].author # no query, returns an Author if it existed for eager loading, nil otherwise
-
+posts[0].author # no query, returns an Author if it existed for eager loading, nil otherwise
+posts[1].author # no query, returns an Author if it existed for eager loading, nil otherwise
+```
 
 An actual test might look something like this:
 
-    it 'eager loads authors' do
-      2.times do
-        Post.create!(author: Author.create!)
-      end
+```ruby
+it 'eager loads authors' do
+  2.times do
+    Post.create!(author: Author.create!)
+  end
 
-      posts = Post.scope_which_eager_loads_authors.to_a
+  posts = Post.scope_which_eager_loads_authors.to_a
 
-      Author.delete_all
+  Author.delete_all
 
-      expect(posts.all?(&:author)).to be_true
-    end
-
+  expect(posts.all?(&:author)).to be_true
+end
+```
 
 To me, a test like this implies that we're eager loading because we care about *determinism*. Whether or not a given `post` in `posts` has an author is determined when we retrieve the list of posts. That is, the *motivation* for eager loading is because we want our code to behave deterministically given some state of the universe, and we write our test to reflect as much.
 
@@ -55,26 +59,27 @@ To me, a test like this implies that we're eager loading because we care about *
 
 A different motivation for eager loading records is for performance. Generally speaking, it is at least an order of magnitude slower to issue N queries for one row than it is to return N rows with a single query (there are, of course, exceptions). The example given above is also a canonical example of when eager loading improves performance, and we can write a test that guides the reader to this conclusion:
 
-    it 'eager loads authors to improve performance' do
-      10.times do
-        Post.create!(author: Author.create!)
-      end
+```ruby
+it 'eager loads authors to improve performance' do
+  10.times do
+    Post.create!(author: Author.create!)
+  end
 
-      eager_loaded = Post.scope_which_eager_loads_authors.to_a
-      lazy_loaded = Post.all.to_a
+  eager_loaded = Post.scope_which_eager_loads_authors.to_a
+  lazy_loaded = Post.all.to_a
 
-      eager_loaded_duration = Benchmark.realtime do
-        eager_loaded.each(&:author)
-      end
+  eager_loaded_duration = Benchmark.realtime do
+    eager_loaded.each(&:author)
+  end
 
-      lazy_loaded_duration = Benchmark.realtime do
-        lazy_loaded.each(&:author)
-      end
+  lazy_loaded_duration = Benchmark.realtime do
+    lazy_loaded.each(&:author)
+  end
 
-      # eager loading should be an order of magnitude faster than lazy loading
-      expect((eager_loaded_duration * 10) < lazy_loaded_duration).to be_true
-    end
-
+  # eager loading should be an order of magnitude faster than lazy loading
+  expect((eager_loaded_duration * 10) < lazy_loaded_duration).to be_true
+end
+```
 
 * * *
 

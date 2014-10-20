@@ -14,33 +14,35 @@ This post details a refactoring in the data migration codebase, which was motiva
 
 At a high level, our data migration looks like this:
 
-    records_which_should_be_imported.each do |record|
-      importer = SomeImporter.new(record)
+```ruby
+records_which_should_be_imported.each do |record|
+  importer = SomeImporter.new(record)
 
-      ActiveRecord::Base.transaction do
-        begin
-          importer.call
-        rescue
-          raise ActiveRecord::Rollback
-        end
-      end
+  ActiveRecord::Base.transaction do
+    begin
+      importer.call
+    rescue
+      raise ActiveRecord::Rollback
     end
-
+  end
+end
+```
 
 Where `SomeImporter.new(record)` attempts to establish the state required to perform an import, and `importer.call` uses that state to build and save Supermarket's object graph. We wrap `importer.call` in an ActiveRecord transaction so that we don't leave the database in a messy state if the import fails.
 
 It's worth noting that these `importer` objects grew out of a similar desire to debug with ease, but are not in practice all that easy to use. If we have a `record` which causes `importer` to raise an exception, we need to do some gymnastics to get at the invalid object:
 
-    error = nil
+```ruby
+error = nil
 
-    begin
-      SomeImporter.new(record).call
-    rescue => e
-      error = e
-    end
+begin
+  SomeImporter.new(record).call
+rescue => e
+  error = e
+end
 
-    error.record # and only if the error is an ActiveRecord error
-
+error.record # and only if the error is an ActiveRecord error
+```
 
 Given the relatively poor state of the data on the existing Community Site, it quickly becomes desirable to cut to the proverbial chase. In particular, we care about three things when importing a record fails:
 
@@ -58,57 +60,62 @@ Given the relatively poor state of the data on the existing Community Site, it q
 
 If we shift our approach so that `importer` implements `Enumerable` to iterate over the records it deems need to be saved *without* saving them, we can answer all of these questions with ease. So, where an importer's `call` method may have once looked like this:
 
-    def call
-      something = Something.new
-      something.save!
-    end
-
+```ruby
+def call
+  something = Something.new
+  something.save!
+end
+```
 
 We rename it to `each` and write it like this:
 
-    def each
-      yield ::Something.new
-    end
-
+```ruby
+def each
+  yield ::Something.new
+end
+```
 
 Our import now looks like this:
 
-    records_which_should_be_imported.each do |record|
-      importer = SomeImporter.new(record)
+```ruby
+records_which_should_be_imported.each do |record|
+  importer = SomeImporter.new(record)
 
-      ActiveRecord::Base.transaction do
-        begin
-          importer.each(&:save!)
-        rescue
-          raise ActiveRecord::Rollback
-        end
-      end
+  ActiveRecord::Base.transaction do
+    begin
+      importer.each(&:save!)
+    rescue
+      raise ActiveRecord::Rollback
     end
-
+  end
+end
+```
 
 From the console, it's easier to see what we're trying to import, and once we include `Enumerable` in each importer class, we've got a lot more flexibility with regard to how we can debug failing imports:
 
-    importer = SomeImporter.new(record)
-    first_invalid_record = importer.find { |r| !r.valid? }
-
+```ruby
+importer = SomeImporter.new(record)
+first_invalid_record = importer.find { |r| !r.valid? }
+```
 
 Using `Enumerable#to_a`, we can refactor the migration to only open a transaction if there are records to import.
 
-    records_which_should_be_imported.each do |record|
-      importer = SomeImporter.new(record)
-      new_records = importer.to_a
+```ruby
+records_which_should_be_imported.each do |record|
+  importer = SomeImporter.new(record)
+  new_records = importer.to_a
 
-      if new_records.any?
-        ActiveRecord::Base.transaction do
-          begin
-            new_records.each(&:save!)
-          rescue
-            raise ActiveRecord::Rollback
-          end
-        end
+  if new_records.any?
+    ActiveRecord::Base.transaction do
+      begin
+        new_records.each(&:save!)
+      rescue
+        raise ActiveRecord::Rollback
       end
     end
-
+  end
+end
+```
 
 My (admittedly informal) benchmarks indicate that this change results in a 10% speedup. It seems reasonable to attribute it to performing fewer queries inside of each transaction, and to nearly eliminating empty transactions altogether.
 
