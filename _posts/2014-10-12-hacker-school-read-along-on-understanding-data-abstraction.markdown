@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Hacker School Read Along: On Understanding Data Abstraction"
+title: "On Understanding Data Abstraction, Revisited"
 permalink: hacker-school-read-along-on-understanding-data-abstraction
-category: posts
+category: hsreadalong
 date: 2014-10-12 20:21
 published: true
 ---

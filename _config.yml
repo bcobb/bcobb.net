@@ -6,6 +6,7 @@ exclude:
   - Gemfile.lock
   - bin/
   - README
+  - log/
 markdown: redcarpet
 gems:
   - jekyll-sitemap
