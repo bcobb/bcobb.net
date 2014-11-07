@@ -44,6 +44,14 @@ a:visited {
   color: slateblue;
 }
 
+sup {
+  line-height: 0;
+}
+
+sup a {
+  padding: 0;
+}
+
 table {
   font-size: inherit;
   font: 100%;
