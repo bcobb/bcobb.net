@@ -23,10 +23,10 @@ Programmers rely on each other to vet and critique the code they've written, fro
 "The whole team owns the code" is much easier said than done, and a whole host of team and power dynamics play into whether or not a given criticism feels positive or negative.
 Regardless, regular critique is a fundamental part of working on a software team; healthy teams work to minimize the amount of ego any one individual leaves in the code.
 
-But open source software is somehow different than purpose-built software written by a dedicated team.
-Reading Sam's post now, I get the sense that maintaining a popular open source library feels more like a performance than a collaboration.
+But software written solo is somehow different than software written by a dedicated team.
+Reading Sam's post now, I get the sense that authoring and maintaining a popular open source library feels more like a performance than a collaboration.
 (And certainly: there is an element of performance in the act of writing code&mdash;programmers often talk about "code style" or "stylistic decisions," for instance.)
-But Prototype and its successors are tools, and the extent to which their code is an outlet for self-expression will always be overshadowed by whether or not others find them useful.[^2]
+But Prototype and its successors are tools, and their utility will always matter more to their consumers than any element of self-expression within.[^2]
 
 If _Art &amp; Fear_ has anything to say about gracefully sidestepping this sort of identity crisis, it is that folks who _make stuff_ should invest their ego not in their _artifacts_ but in the _act_ of making things, and in the habits that historically have produced work.
 
