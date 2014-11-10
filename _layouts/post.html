@@ -22,8 +22,13 @@
     <h1 class="title"><a href="/">bcobb</a></h1>
 
     <div id="post">
-      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-      <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+      {% if page.title %}
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      {% endif %}
+
+      {% if page.date %}
+        <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+      {% endif %}
 
       {{ content }}
     </div>
