@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Big Idea of Bayou"
+title: "Managing Update Conflicts in Bayou"
 permalink: hacker-school-read-along-managing-update-conflicts-in-bayou
 category: hsreadalong
 date: 2014-11-09 22:30
