@@ -6,7 +6,7 @@
   <title>bcobb: {{ page.title }}</title>
   <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen" charset="utf-8" />
   <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.path }}feed.xml">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,6 +27,9 @@
     {{ content }}
 
     {% include footer.html %}
+    <p class="credits">
+      Thanks to <a href="http://michaelrbernste.in" target="_blank">Michael R. Bernstein</a> for the <a href="https://github.com/mrb/mrb.github.com/" target="_blank">foundation</a> of this blog.
+    </p>
   </div>
 </body>
 </html>

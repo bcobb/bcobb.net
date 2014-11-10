@@ -118,6 +118,11 @@ ul.posts span {
   overflow: hidden;
 }
 
+.site .credits {
+  font-size: 60%;
+  color: #666;
+}
+
 #post {
    margin-left: auto;
    margin-right:auto;
