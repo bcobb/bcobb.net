@@ -27,7 +27,7 @@ Here's how I would like to break down the steps to dev-prod parity, at least for
 
 My hope is that this minimizes or eliminates the so-called "tool gap" between development and production. If development "stands up," we can be reasonably sure production will stand up. Development will use the same process supervisor, the same init scripts, the same configuration mechanism as production, so we can even get a mini-prod running locally by configuring everything except the code delivery strategy to be production-esque.
 
-This is the direction I'd like to take with SpeakUp, but I anticipate it being not as easy as I hope. After a day of fighting with VMWare, I kinda just want to quietly introduce foreman for local development and move on with my life. This flapjack will hopefully keep the topic top-of-mind, and spur me or one of the other S'Uppers to wrangle some sweet devoops.
+But after a day of fighting with Vagrant and VMWare, I mostly just want to quietly introduce foreman for local development and move on with my life.
 
  [1]: http://12factor.net/
  [2]: http://12factor.net/dev-prod-parity

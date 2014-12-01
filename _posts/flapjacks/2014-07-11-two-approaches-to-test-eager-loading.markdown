@@ -8,7 +8,7 @@ category: flapjacks
 author: Brian Cobb
 ---
 
-We've been updating some queries in Supermarket to take advantage of ActiveRecord's eager loading. In talking with Brett about the when, why, and how of eager loading, I wrote a gist of two ways one can write tests around eager loading (it *is* a change in behavior, after all). This post will borrow from that gist and expand upon the motivation to use either.
+We've been updating some queries in Supermarket to take advantage of ActiveRecord's eager loading. In talking with [Brett](http://brettchalupa.com) about the when, why, and how of eager loading, I wrote a gist of two ways one can write tests around eager loading (it *is* a change in behavior, after all). This post will borrow from that gist and expand upon the motivation to use either.
 
 * * *
 

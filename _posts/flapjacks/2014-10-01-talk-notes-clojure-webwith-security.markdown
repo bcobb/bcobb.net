@@ -2,7 +2,7 @@
 layout: post
 title: "Talk Notes: clojure.web/with-security"
 permalink: talk-notes-clojure-web-with-security
-published: true
+published: false
 date: 2014-10-01 20:32
 category: flapjacks
 author: Brian Cobb

@@ -8,7 +8,7 @@ category: flapjacks
 author: Brian Cobb
 ---
 
-The company site is now running on Jekyll, and there's a Vagrantfile which automates a big chunk of local development setup.
+[gofullstack.com](http://gofullstack.com) is now running on Jekyll, and there's a Vagrantfile which automates a big chunk of local development setup.
 
 For the last week, my workflow while writing blog posts and working on the site has been to run `vagrant up` inside the repo, and then to run `bin/jekyll serve -w --force_polling` in a tmux split. I'd then work in vim locally so that I didn't have to also set up the Vagrant box with vim and my dotfiles.
 
