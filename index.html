@@ -17,16 +17,16 @@ title: home
 {% endfor %}
 </ul>
 
-{% if site.categories.artandfear.size == 0 %}
-  <h2>Art &amp; Fear</h2>
+{% if site.categories.book.size > 0 %}
+  <h2>Bookish</h2>
 
-  <p class="lead">Comparing and contrasting Art and Programming after having read <a href="http://www.indiebound.org/book/9780961454739">Art &amp; Fear</a></p>
+  <p class="lead">Sometimes I read books and then write something about them here.</p>
 
   <ul class="posts">
-  {% for post in site.categories.artandfear %}
+  {% for post in site.categories.book %}
       {% if post.published %}
       <li class="index">
-        <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.listing }}</a>
+        <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endif %}
   {% endfor %}

@@ -171,6 +171,14 @@ hr {
   border-color: #ddd;
 }
 
+.footnotes > hr {
+  border-style: dashed;
+}
+
+.footnotes a[rev=footnote] {
+  color: red;
+}
+
 /* Fonts */
 
 .index-date{
@@ -183,6 +191,10 @@ hr {
   font-style:italic;
   font-size:85%;
   margin-bottom: .4em;
+}
+
+.footnotes {
+  font-size: 80%;
 }
 
 @media screen and (max-width: 768px) {
