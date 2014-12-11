@@ -17,13 +17,13 @@ title: home
 {% endfor %}
 </ul>
 
-{% if site.categories.book.size > 0 %}
-  <h2>Bookish</h2>
+{% if site.categories.misc.size > 0 %}
+  <h2>Miscellany</h2>
 
-  <p class="lead">Sometimes I read books and then write something about them here.</p>
+  <p class="lead">That which has no better category.</p>
 
   <ul class="posts">
-  {% for post in site.categories.book %}
+  {% for post in site.categories.misc %}
       {% if post.published %}
       <li class="index">
         <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>

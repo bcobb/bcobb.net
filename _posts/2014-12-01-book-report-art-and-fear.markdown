@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Art &amp; Fear"
+title: "Book Report: Art &amp; Fear"
 published: true
 permalink: book-art-and-fear
 date: 2014-12-01 14:00
-category: book
+category: misc
 ---
 
 I can't remember who recommended I read _[Art &amp; Fear]_ (by David Bayles and Ted Orland), but [Sam](https://twitter.com/sabramse) bought it for me for my birthday last year, and I finally sat down to read it[^1].
