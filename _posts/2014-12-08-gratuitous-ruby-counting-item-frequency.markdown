@@ -26,7 +26,7 @@ end
 I don't know that it's better or worse, but it has two properties I like:
 
 1. The body of `reduce` is immutable.
-1. It utilizes `merge`'s ability to take a block to resolve conflicting updates.
+1. It utilizes `merge`'s ability to take a block to resolve conflicting updates.[^1]
 
 The last point is the linchpin of the block.
 When we merge in a new `item` key into `map`, its value is set to `1`.
@@ -37,3 +37,5 @@ For our purposes, the key isn't necessary; but notice that its existing value is
 Anyway, there's not really a point to this post, other than that it can be fun to fart around with Enumerable on a sleety Monday night.
 
 [@jessitron]: https://twitter.com/jessitron
+
+[^1]: My friend Ransom pointed out that since `merge` performs a copy of the source Hash, the code I've written has polynomial complexity (traversal &times; merge). There's no practical downside to changing it to `merge!` which would avoid the copy.
