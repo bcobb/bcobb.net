@@ -4,8 +4,9 @@ title=$@
 whitelist='A-Za-z0-9# '
 dash_characters='# '
 prefix=$(date "+%Y-%m-%d")
+datetime=$(date "+%Y-%m-%d %H:%M")
 suffix=$(echo $title | sed -E "s/[^$whitelist]//g" | sed -E "s/[$dash_characters]/-/g" | tr '[:upper:]' '[:lower:]')
-frontmatter="---\nlayout: post\ntitle: \"$title\"\npublished: true\npermalink: $suffix\n---"
+frontmatter="---\nlayout: post\ntitle: \"$title\"\npublished: true\npermalink: $suffix\ncategory: tbd\ndate: $datetime\n---"
 filename="_drafts/$prefix-$suffix.markdown"
 
 if [ -f $filename ] ; then
