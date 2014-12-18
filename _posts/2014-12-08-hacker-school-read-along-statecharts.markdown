@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Statecharts: A Visual Formalism For Complex Systems"
+seo:
+  title: "Statecharts: A Visual Formalism For Complex Systems"
 permalink: hacker-school-read-along-statecharts
 category: hsreadalong
 date: 2014-12-08 21:05

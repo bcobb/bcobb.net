@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Better Know Enumerable: Introduction"
+seo:
+  title: "Better Know Enumerable: Introduction"
 permalink: better-know-enumerable-introduction
 date: 2014-09-17 08:20
 category: elsewhere

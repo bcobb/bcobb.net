@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Jekyll and Vagrant: The Good, The Bad, and The Ugly"
+seo:
+  title: "Jekyll and Vagrant: The Good, The Bad, and The Ugly"
 permalink: jekyll-and-vagrant-the-good-the-bad-and-the-ugly
 published: true
 date: 2014-09-18 21:55

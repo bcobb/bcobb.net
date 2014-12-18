@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Better Know Enumerable: Partition"
+seo:
+  title: "Better Know Enumerable: Partition"
 permalink: better-know-enumerable-partition
 date: 2014-10-03 09:04
 category: elsewhere

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Talk Notes: clojure.web/with-security"
+seo:
+  title: "Talk Notes: clojure.web/with-security"
 permalink: talk-notes-clojure-web-with-security
 published: false
 date: 2014-10-01 20:32

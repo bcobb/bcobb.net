@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Curry: How Chef Software (Mostly) Automated Their CLA"
+seo:
+  title: "Curry: How Chef Software (Mostly) Automated Their CLA"
 permalink: curry-how-chef-software-mostly-automated-their-cla
 date: 2014-10-24 12:01
 category: elsewhere

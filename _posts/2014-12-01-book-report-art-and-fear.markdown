@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Book Report: Art &amp; Fear"
+seo:
+  title: "Book Report: Art &amp; Fear"
 published: true
 permalink: book-art-and-fear
 date: 2014-12-01 14:00

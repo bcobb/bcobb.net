@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Idempotency Trap
+seo:
+  title: The Idempotency Trap
 permalink: the-idempotency-trap
 published: true
 date: 2014-07-01 14:02

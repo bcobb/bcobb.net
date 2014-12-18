@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "The Power of Interoperability: Why Objects Are Inevitable"
+seo:
+  title: "The Power of Interoperability: Why Objects Are Inevitable"
 permalink: hacker-school-read-along-the-power-of-interoperability
 category: hsreadalong
 date: 2014-10-20 09:30

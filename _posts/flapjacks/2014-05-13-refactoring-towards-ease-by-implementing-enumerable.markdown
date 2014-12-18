@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Refactoring towards ease by implementing Enumerable
+seo:
+  title: Refactoring towards ease by implementing Enumerable
 permalink: refactoring-towards-ease-by-implementing-enumerable
 published: true
 date: 2014-05-13 15:44

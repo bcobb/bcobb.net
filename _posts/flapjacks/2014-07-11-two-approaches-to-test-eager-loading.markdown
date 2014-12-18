@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Two approaches to test eager loading
+seo:
+  title: Two approaches to test eager loading
 permalink: two-approaches-to-test-eager-loading
 published: true
 date: 2014-07-11 16:22

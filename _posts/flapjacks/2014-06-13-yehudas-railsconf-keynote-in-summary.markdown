@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Yehuda's Railsconf Keynote, in Summary
+seo:
+  title: Yehuda's Railsconf Keynote, in Summary
 permalink: yehudas-railsconf-keynote-in-summary
 published: false
 date: 2014-06-14 17:23
