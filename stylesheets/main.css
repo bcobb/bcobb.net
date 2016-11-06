@@ -196,6 +196,19 @@ hr {
   font-size: 80%;
 }
 
+figure {
+  width: 80%;
+  margin: 0 auto;
+}
+
+figure > img {
+  width: 100%;
+}
+
+figure > figcaption {
+  font-size: 80%;
+}
+
 @media screen and (max-width: 768px) {
   .site {
     width: 90%;
