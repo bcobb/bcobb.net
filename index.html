@@ -5,42 +5,10 @@ seo:
   title: home
 ---
 
-<h2>Hacker School Read Along</h2>
-
-<p class="lead">Reflections on papers in the <a href="https://www.hackerschool.com">Hacker School</a> Read Along series.</p>
+<h2>Posts</h2>
 
 <ul class="posts">
-{% for post in site.categories.hsreadalong %}
-    {% if post.published %}
-    <li class="index">
-      <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
-{% endfor %}
-</ul>
-
-{% if site.categories.misc.size > 0 %}
-  <h2>Miscellany</h2>
-
-  <p class="lead">That which has no better category.</p>
-
-  <ul class="posts">
-  {% for post in site.categories.misc %}
-      {% if post.published %}
-      <li class="index">
-        <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endif %}
-  {% endfor %}
-  </ul>
-{% endif %}
-
-<h2>Flapjacks</h2>
-
-<p class="lead">Flapjacks are posts that originally appeared on the <a href="http://gofullstack.com">FullStack</a> internal blog. These ones are context-independent enough to appear here effectively unchanged.</p>
-
-<ul class="posts">
-{% for post in site.categories.flapjacks %}
+{% for post in site.posts %}
     {% if post.published %}
     <li class="index">
       <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
