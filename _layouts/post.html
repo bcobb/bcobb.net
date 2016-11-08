@@ -31,6 +31,14 @@
       {% endif %}
 
       {{ content }}
+
+      {% for category in page.categories %}
+        {% if category == "flapjacks" %}
+          <p class="flapjack description">
+            This post is a flapjack, which means I originally wrote it for the internal <a href="http://gofullstack.com">FullStack</a> blog and have republished it here. Any mysterious, unexplained context was probably obvious to the team at the time.
+          </p>
+        {% endif %}
+      {% endfor %}
     </div>
 
     {% include footer.html %}

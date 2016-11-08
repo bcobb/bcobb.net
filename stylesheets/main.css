@@ -209,6 +209,20 @@ figure > figcaption {
   font-size: 80%;
 }
 
+.description.flapjack {
+  background: chocolate;
+  color: white;
+  padding: 1em;
+  font-size: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description.flapjack a {
+  color: white;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .site {
     width: 90%;
