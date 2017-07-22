@@ -1,5 +1,5 @@
 name: bcobb.net
-description: Brian Cobb writes about software.
+description: Brian Cobb writes about stuff.
 url: http://www.bcobb.net
 path: "/"
 exclude:
@@ -9,6 +9,7 @@ exclude:
   - README
   - log/
 markdown: redcarpet
+permalink: "/:title/"
 gems:
   - jekyll-sitemap
 redcarpet:

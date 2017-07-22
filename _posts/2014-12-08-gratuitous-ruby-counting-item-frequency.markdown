@@ -4,7 +4,7 @@ title: "Gratuitous Ruby: Counting Item Frequency"
 seo:
   title: "Gratuitous Ruby: Counting Item Frequency"
 published: true
-permalink: gratuitous-ruby-counting-item-frequency
+slug: gratuitous-ruby-counting-item-frequency
 date: 2014-12-08 22:41
 category: misc
 ---

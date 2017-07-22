@@ -3,7 +3,7 @@ layout: post
 title: "On Understanding Data Abstraction, Revisited"
 seo:
   title: "On Understanding Data Abstraction, Revisited"
-permalink: hacker-school-read-along-on-understanding-data-abstraction
+slug: hacker-school-read-along-on-understanding-data-abstraction
 category: hsreadalong
 date: 2014-10-12 20:21
 published: true

@@ -4,7 +4,7 @@ title: "Clojure's interpose in Ruby"
 seo:
   title: "Clojure's interpose in Ruby"
 published: true
-permalink: clojures-interpose-in-ruby
+slug: clojures-interpose-in-ruby
 category: tbd
 date: 2017-07-22 12:59
 ---

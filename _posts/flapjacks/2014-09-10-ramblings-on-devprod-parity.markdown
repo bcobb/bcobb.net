@@ -3,7 +3,7 @@ layout: post
 title: Ramblings on dev/prod parity
 seo:
   title: Ramblings on dev/prod parity
-permalink: ramblings-on-devprod-parity
+slug: ramblings-on-devprod-parity
 published: true
 date: 2014-09-10 13:31
 category: flapjacks

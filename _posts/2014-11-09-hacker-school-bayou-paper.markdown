@@ -3,7 +3,7 @@ layout: post
 title: "Managing Update Conflicts in Bayou"
 seo:
   title: "Managing Update Conflicts in Bayou"
-permalink: hacker-school-read-along-managing-update-conflicts-in-bayou
+slug: hacker-school-read-along-managing-update-conflicts-in-bayou
 category: hsreadalong
 date: 2014-11-09 22:30
 published: true

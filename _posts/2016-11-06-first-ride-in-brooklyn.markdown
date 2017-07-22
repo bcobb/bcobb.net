@@ -2,7 +2,7 @@
 layout: post
 title: "First ride in Brooklyn"
 published: true
-permalink: first-ride-in-brooklyn
+slug: first-ride-in-brooklyn
 category: tbd
 date: 2016-11-06 14:38
 ---
