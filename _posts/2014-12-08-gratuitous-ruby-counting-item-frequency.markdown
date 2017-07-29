@@ -11,7 +11,7 @@ category: misc
 
 Tonight on Twitter, [@jessitron] posted the following:
 
-<blockquote class="twitter-tweet" lang="en"><p>Counting in <a href="https://twitter.com/hashtag/Ruby?src=hash">#Ruby</a>:&#10;[&quot;a&quot;,&quot;b&quot;,&quot;a&quot;].inject(<a href="http://t.co/42s0B3GL9E">http://t.co/42s0B3GL9E</a>(0)) { |m,o| m[o] += 1; m }&#10; =&gt; {&quot;a&quot;=&gt;2, &quot;b&quot;=&gt;1}&#10;<a href="https://twitter.com/mattruzicka">@mattruzicka</a> <a href="https://twitter.com/hashtag/STLRuby?src=hash">#STLRuby</a></p>&mdash; Jessica Kerr (@jessitron) <a href="https://twitter.com/jessitron/status/542150589728440320">December 9, 2014</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>Counting in <a href="https://twitter.com/hashtag/Ruby?src=hash">#Ruby</a>:&#10;[&quot;a&quot;,&quot;b&quot;,&quot;a&quot;].inject(Hash.new(0)) { |m,o| m[o] += 1; m }&#10; =&gt; {&quot;a&quot;=&gt;2, &quot;b&quot;=&gt;1}&#10;<a href="https://twitter.com/mattruzicka">@mattruzicka</a> <a href="https://twitter.com/hashtag/STLRuby?src=hash">#STLRuby</a></p>&mdash; Jessica Kerr (@jessitron) <a href="https://twitter.com/jessitron/status/542150589728440320">December 9, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The other week, I needed to do exactly this, and came up with a slightly different approach.
@@ -37,6 +37,20 @@ The block itself takes three arguments: the conflicting key, the existing value 
 For our purposes, the key isn't necessary; but notice that its existing value is simply the number of `item` keys we've tried to merge in the past (starting with `1`), and the value we're attempting to merge is the value by which we increment the count.
 
 Anyway, there's not really a point to this post, other than that it can be fun to fart around with Enumerable on a sleety Monday night.
+
+#### Postscript, 2017-07-29
+
+These days, I'd almost certainly do what Jessica wrote in her initial toot, with one small change:
+
+```ruby
+%(a b a).each_with_object(Hash.new(0)) do |i, h|
+  h[i] += 1
+end
+```
+
+Why is this?
+Well: these days, I actually understand what `each_with_object` does!
+In 2014, that was not the case.
 
 [@jessitron]: https://twitter.com/jessitron
 
