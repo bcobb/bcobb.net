@@ -189,7 +189,18 @@ This isn't something I'm racing to introduce at work, but it was a fun exercise 
 It also led me to wonder what it would take to extend the core Ruby language to support `interpose`.
 I've never really written C, but I intend to explore this question some more, and will hopefully have something to show for it soon!
 
+---
+
+### Addendum, 2017-08-03
+
+Avdi Grimm(!) wrote a [follow-up post][riffing], riffing on this idea.
+His implementation is not only significantly faster, but also a bit more Rubyish -- it allows the caller of `interpose` to pass an optional block which receives items and separators as its sole argument.
+He also drives out the behavior using tests, using RSpec's shared example groups to capture shared behavior between the block and block-less variants.
+
+Thanks, Avdi!
+
 [interpose]: https://clojuredocs.org/clojure.core/interpose
 [enumerator docs]: https://ruby-doc.org/core-2.4.0/Enumerator.html
 [yielder]: https://ruby-doc.org/core-2.4.0/Enumerator.html#method-c-new
 [realizes it]: http://clojure-doc.org/articles/language/laziness.html#realizing-lazy-sequences-forcing-evaluation
+[riffing]: http://www.virtuouscode.com/2017/08/02/riffing-on-interpose-in-ruby/
