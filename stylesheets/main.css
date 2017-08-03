@@ -15,6 +15,7 @@ body {
 }
 
 .site {
+  max-width: 1024px;
   padding: 2em;
 }
 
@@ -84,7 +85,6 @@ body {
   font-family: "Ubuntu Mono", monospace;
   border: 1px solid #ddd;
   background-color: #fff;
-  font-size: 80%;
 }
 
 blockquote {
@@ -217,5 +217,9 @@ hr {
 
   ul.posts {
     font-size: 20px;
+  }
+
+  #post code {
+    font-size: 80%;
   }
 }
