@@ -11,7 +11,11 @@ seo:
 {% for post in site.posts %}
     {% if post.published %}
     <li class="index">
-      <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
+      <div class="index-date">
+        {{ post.date | date: "%Y-%m-%d" }}
+        <span class="indicator">&#8628;</span>
+      </div>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endif %}
 {% endfor %}
@@ -23,7 +27,11 @@ seo:
 {% for post in site.categories.elsewhere %}
     {% if post.original %}
     <li class="index">
-      <div class="index-date">{{ post.date | date: "%Y-%m-%d" }}</div><a href="{{ post.original }}">{{ post.title }}</a>
+      <div class="index-date">
+        {{ post.date | date: "%Y-%m-%d" }}
+        <span class="indicator">&#8628;</span>
+      </div>
+      <a href="{{ post.original }}">{{ post.title }}</a>
     </li>
     {% endif %}
 {% endfor %}

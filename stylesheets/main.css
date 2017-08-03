@@ -157,10 +157,9 @@ ul.posts li a {
   display: inline-block;
 }
 
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+ul.posts li .indicator {
+  font-size: 50%;
+  padding-left: 0.5em;
 }
 
 .description.flapjack {
@@ -208,6 +207,12 @@ hr {
   color: black;
 }
 
+@media (orientation: landscape) {
+  ul.posts li .indicator {
+    display: none;
+  }
+}
+
 @media (min-device-width: 667px) {
   .site {
     width: 60%;
@@ -218,6 +223,10 @@ hr {
 
   ul.posts {
     font-size: 20px;
+  }
+
+  ul.posts li .indicator {
+    display: none;
   }
 
   #post code {
