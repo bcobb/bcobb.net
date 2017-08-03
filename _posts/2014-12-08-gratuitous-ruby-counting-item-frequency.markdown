@@ -38,7 +38,9 @@ For our purposes, the key isn't necessary; but notice that its existing value is
 
 Anyway, there's not really a point to this post, other than that it can be fun to fart around with Enumerable on a sleety Monday night.
 
-#### Postscript, 2017-07-29
+---
+
+### Postscript, 2017-07-29
 
 These days, I'd almost certainly do what Jessica wrote in her initial toot, with one small change:
 
