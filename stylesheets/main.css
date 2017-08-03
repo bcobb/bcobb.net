@@ -63,7 +63,7 @@ body {
 
 #post pre {
   background-color: #fff;
-  padding: 0.4em;
+  padding: 0 1em;
 }
 
 #post pre code {
@@ -85,7 +85,6 @@ body {
   border: 1px solid #ddd;
   background-color: #fff;
   font-size: 80%;
-  padding: 0 .2em;
 }
 
 blockquote {
