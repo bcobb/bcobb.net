@@ -12,7 +12,11 @@ markdown: redcarpet
 permalink: "/:title/"
 gems:
   - jekyll-sitemap
+  - jekyll-assets
 redcarpet:
   extensions:
     - footnotes
     - smart
+assets:
+  assets:
+    - "*.css"
