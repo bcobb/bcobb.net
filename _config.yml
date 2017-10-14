@@ -1,6 +1,6 @@
 name: bcobb.net
 description: Brian Cobb writes about stuff.
-url: http://www.bcobb.net
+url: https://www.bcobb.net
 path: "/"
 exclude:
   - Gemfile
@@ -8,6 +8,7 @@ exclude:
   - bin/
   - README
   - log/
+  - tmp/
 markdown: redcarpet
 permalink: "/:title/"
 gems:

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# -f prevent the wildcard path from expanding
+# -e bail on errors
+set -fe
+
+function distribution_ids {
+    aws cloudfront list-distributions | jq --raw-output '.DistributionList.Items[].Id';
+}
+
+function invalidate_distribution {
+    if [ "$1" ]
+    then
+        aws cloudfront create-invalidation \
+            --distribution-id "$1" \
+            --paths "/*"
+    fi
+}
+
+function main {
+    for id in $(distribution_ids); do
+        invalidate_distribution "$id"
+    done
+}
+
+main

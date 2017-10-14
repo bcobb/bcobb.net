@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# -e bail on errors
+set -e
+
+function create_backup {
+    local dest;
+
+    dest="tmp/$(date +%Y-%m-%dT%H:%M:%S%z).tar.gz"
+
+    tar -czf "$dest" _site;
+}
+
+function build_site {
+    JEKYLL_ENV=production bundle exec jekyll build
+}
+
+function upload_site {
+    aws s3 sync _site s3://bcobb-dot-net --delete
+}
+
+function main {
+    create_backup
+    build_site
+    upload_site
+}
+
+main

@@ -1,12 +1,17 @@
 <html lang="en">
 <head>
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic" rel="stylesheet" type="text/css">
 {% include meta.html %}
 
   <title>bcobb: {{ page.seo.title }}</title>
   {% css main %}
   {% css syntax %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.path }}feed.xml">
+  {% if page.canonical_path %}
+  <link rel="canonical" href="{{ site.url }}{{ page.canonical_path }}">
+  {% else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% endif %}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

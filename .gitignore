@@ -2,3 +2,4 @@ _site
 .DS_Store
 log/*.log
 .asset-cache
+tmp

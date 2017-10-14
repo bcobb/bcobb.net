@@ -1,7 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^bcobb.net$
-RewriteRule ^(.*)$ "http\:\/\/www\.bcobb\.net\/$1" [R=301,L]
-
-ErrorDocument 404 /404.html
-
