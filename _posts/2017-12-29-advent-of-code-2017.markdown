@@ -57,7 +57,7 @@ In the end:
   But figuring out how to write a function that would take a whole matrix, split it into submatrices, enhance those submatrices, and the re-assemble the matrix took a lot of squinting at the problem and some judicious use of `partition` and `interleave`.
   The resulting code is very much [write-once, read-never][darkmagic] and I'm still not sure what to name most of the intermediate representations of matrix elements.
 - The second part of Day 23 was genuinely new for me, in that it required analyzing an assembly-like language by hand, and could not be solved by writing an interpreter for the assembly (at least, I was not able to write one that would produce a solution in a reasonable amount of time!).
-  I felt elated when I figured out what the horribly inefficent assembly was trying to do.
+  I felt elated when I figured out what the horribly inefficient assembly was trying to do.
 
 ### Next Year
 
