@@ -4,7 +4,7 @@ title: "Advent of Code 2017"
 seo:
   title: "Advent of Code 2017"
 published: true
-permalink: advent-of-code-2017
+slug: advent-of-code-2017
 category: tbd
 date: 2017-12-29 09:47
 ---
