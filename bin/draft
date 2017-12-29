@@ -6,7 +6,7 @@ dash_characters='# '
 prefix=$(date "+%Y-%m-%d")
 datetime=$(date "+%Y-%m-%d %H:%M")
 suffix=$(echo $title | sed -E "s/[^$whitelist]//g" | sed -E "s/[$dash_characters]/-/g" | tr '[:upper:]' '[:lower:]')
-frontmatter="---\nlayout: post\ntitle: \"$title\"\nseo:\n  title: \"$title\"\npublished: true\npermalink: $suffix\ncategory: tbd\ndate: $datetime\n---"
+frontmatter="---\nlayout: post\ntitle: \"$title\"\nseo:\n  title: \"$title\"\npublished: true\nslug: $suffix\ncategory: tbd\ndate: $datetime\n---"
 filename="_drafts/$prefix-$suffix.markdown"
 
 if [ -f $filename ] ; then
