@@ -1,0 +1,76 @@
+---
+layout: post
+title: "Advent of Code 2017"
+seo:
+  title: "Advent of Code 2017"
+published: true
+permalink: advent-of-code-2017
+category: tbd
+date: 2017-12-29 09:47
+---
+
+[Advent of Code][aoc] is a series of daily programming puzzles created by [Eric Wastl][wastl] and published daily in the month of December.
+As of [yesterday][gh], I completed all of them!
+Here are a few reflections in retrospect:
+
+### On Clojure
+
+I no longer write Clojure as part of my job, and even then I would have considered myself somewhere between Beginner and Advanced Beginner, so these puzzles were a nice opportunity to get back into it.
+In the end:
+
+- I probably overused `loop`/`recur`, but I apologize for nothing.
+- I added `interleave`, `iterate`, `partition` to my toolbox
+- I got a lot more comfortable using features of Clojure I'd only used lightly before -- map destructuring, `comp` and `partial` are the big three that come to mind.
+- I can finally write multi-methods without constantly referring to the docs!
+- I still cannot do anything with zippers without fumbling around in the REPL and in the docs; none of my final solutions ended up using them, though I did briefly implement a "matrix mask" using zippers for Day 21.
+  For Days 7 and 24 (which boiled down to building weighted trees) in particular, I felt like I should have been able to use zippers, but couldn't quite see how to make it work.
+- REPL-driven development is really awesome for puzzles like this.
+- I found Clojure's lazy sequences to provide a lot of leverage, especially on [Day 15][fifteen].
+  I wrote [my own][oscillator] on Day 13!
+- I learned about `frequencies` and `take-last` after I'd reimplemented them.
+  I wonder: are there Clojure docs which just highlight functions which operate on sequences?
+  The main [clojure.core][core] docs are tough to scan.
+
+### Works referenced
+
+- Thanks to Peter Norvig for writing about building a [Lisp interpreter in Python][norvig].
+  I happened to work through it a couple of months ago, and used the tokenization technique to great effect on Day 9.
+- Thanks to Amit Patel for writing about [hexagonal grids][redblob] a number of years ago.
+  The bit about representing coordinates as three-dimensional vectors came in really handy on Day 11.
+
+### Notable days
+
+- Generating a radial grid of numbers in Day 3 was a lot of fun:
+
+    ```txt
+    17  16  15  14  13
+    18   5   4   3  12
+    19   6   1   2  11
+    20   7   8   9  10
+    21  22  23---> ...
+    ```
+
+    Oooh, [strategy][strategy]!
+- Writing interpreters on Days 8, 9, 16, 18, and 23 was fun.
+- Day 21 was really, really challenging for me.
+  I was pleased with being able to project "natural" matrix coordinates (i.e. `(n / 2, n / 2)` is the middle) to "planar" coordinates (i.e. `(0, 0)` is the middle) to [simplify and generalize rotations/flips][rotate-and-flip].
+  But figuring out how to write a function that would take a whole matrix, split it into submatrices, enhance those submatrices, and the re-assemble the matrix took a lot of squinting at the problem and some judicious use of `partition` and `interleave`.
+  The resulting code is very much [write-once, read-never][darkmagic] and I'm still not sure what to name most of the intermediate representations of matrix elements.
+- The second part of Day 23 was genuinely new for me, in that it required analyzing an assembly-like language by hand, and could not be solved by writing an interpreter for the assembly (at least, I was not able to write one that would produce a solution in a reasonable amount of time!).
+  I felt elated when I figured out what the horribly inefficent assembly was trying to do.
+
+### Next Year
+
+My goal for next year is to be able to do these puzzles in a language with a static type checker -- one of Rust, Haskell, PureScript, or Scala.
+
+[aoc]: https://adventofcode.com/2017
+[wastl]: http://was.tl/
+[gh]: https://github.com/bcobb/advent-of-code-2017/commit/07fd7c4e961cdde66248b8574320537af97abbad
+[norvig]: http://norvig.com/lispy.html
+[redblob]: https://www.redblobgames.com/grids/hexagons/
+[oscillator]: https://github.com/bcobb/advent-of-code-2017/blob/master/src/advent/thirteen.clj#L21-L29
+[fifteen]: https://github.com/bcobb/advent-of-code-2017/blob/master/src/advent/fifteen.clj
+[core]: https://clojuredocs.org/clojure.core
+[strategy]: https://github.com/bcobb/advent-of-code-2017/blob/master/src/advent/three.clj#L3-L23
+[darkmagic]: https://github.com/bcobb/advent-of-code-2017/blob/master/src/advent/twenty_one.clj#L146-L156
+[rotate-and-flip]: https://github.com/bcobb/advent-of-code-2017/blob/master/src/advent/twenty_one.clj#L57-L83
