@@ -11,7 +11,7 @@ date: 2017-12-29 09:47
 
 [Advent of Code][aoc] is a series of daily programming puzzles created by [Eric Wastl][wastl] and published daily in the month of December.
 As of [yesterday][gh], I completed all of them!
-Here are a few reflections in retrospect:
+Here are a few reflections:
 
 ### On Clojure
 
