@@ -157,11 +157,6 @@ ul.posts li a {
   display: inline-block;
 }
 
-ul.posts li .indicator {
-  font-size: 50%;
-  padding-left: 0.5em;
-}
-
 .description.flapjack {
   background: chocolate;
   color: white;
@@ -207,13 +202,7 @@ hr {
   color: black;
 }
 
-@media (orientation: landscape) {
-  ul.posts li .indicator {
-    display: none;
-  }
-}
-
-@media (min-device-width: 667px) {
+@media (min-width: 667px) {
   .site {
     width: 60%;
     max-width: 1024px;
@@ -223,10 +212,6 @@ hr {
 
   ul.posts {
     font-size: 20px;
-  }
-
-  ul.posts li .indicator {
-    display: none;
   }
 
   #post code {
