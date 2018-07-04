@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Usage: draft "Title of blog post"
 
 title=$@
 whitelist='A-Za-z0-9# '
@@ -10,7 +11,7 @@ frontmatter="---\nlayout: post\ntitle: \"$title\"\nseo:\n  title: \"$title\"\npu
 filename="_drafts/$prefix-$suffix.markdown"
 
 if [ -f $filename ] ; then
-  echo "Stopping to avoid overwritng $filename"
+  echo "Stopping to avoid overwriting $filename"
   exit 1
 else
   echo -e $frontmatter > $filename
