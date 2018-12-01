@@ -3,9 +3,11 @@ layout: post
 title: Two approaches to test eager loading
 seo:
   title: Two approaches to test eager loading
+  description: Getting tests around eager loading by testing its behavior and performance
 slug: two-approaches-to-test-eager-loading
 published: true
 date: 2014-07-11 16:22
+modified: 2014-07-11 16:22
 category: flapjacks
 author: Brian Cobb
 ---

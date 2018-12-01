@@ -3,10 +3,12 @@ layout: post
 title: "Advent of Code 2017"
 seo:
   title: "Advent of Code 2017"
+  description: "Summary of and reflections on Advent of Code 2017"
 published: true
 slug: advent-of-code-2017
 category: tbd
 date: 2017-12-29 09:47
+modified: 2017-12-29 09:47
 ---
 
 [Advent of Code][aoc] is a series of daily programming puzzles created by [Eric Wastl][wastl] and published daily in the month of December.

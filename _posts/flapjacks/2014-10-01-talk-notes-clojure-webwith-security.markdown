@@ -3,9 +3,11 @@ layout: post
 title: "Talk Notes: clojure.web/with-security"
 seo:
   title: "Talk Notes: clojure.web/with-security"
+  description: "Notes about a talk on web security in Clojure"
 slug: talk-notes-clojure-web-with-security
 published: false
 date: 2014-10-01 20:32
+modified: 2014-10-01 20:32
 category: flapjacks
 author: Brian Cobb
 ---

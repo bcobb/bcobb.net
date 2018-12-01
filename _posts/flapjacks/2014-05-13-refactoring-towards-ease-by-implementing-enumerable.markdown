@@ -3,9 +3,11 @@ layout: post
 title: Refactoring towards ease by implementing Enumerable
 seo:
   title: Refactoring towards ease by implementing Enumerable
+  description: A description of a refactoring using Ruby's Enumerable module
 slug: refactoring-towards-ease-by-implementing-enumerable
 published: true
 date: 2014-05-13 15:44
+modified: 2014-05-13 15:44
 category: flapjacks
 author: Brian Cobb
 ---

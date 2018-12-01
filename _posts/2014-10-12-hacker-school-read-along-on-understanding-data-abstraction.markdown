@@ -3,9 +3,12 @@ layout: post
 title: "On Understanding Data Abstraction, Revisited"
 seo:
   title: "On Understanding Data Abstraction, Revisited"
+  description: |
+    Summary of and reflection on "On Understanding Data Abstraction, Revisited"
 slug: hacker-school-read-along-on-understanding-data-abstraction
 category: hsreadalong
 date: 2014-10-12 20:21
+modified: 2014-10-12 20:21
 published: true
 ---
 

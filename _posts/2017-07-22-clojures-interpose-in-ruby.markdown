@@ -3,10 +3,12 @@ layout: post
 title: "Clojure's interpose in Ruby"
 seo:
   title: "Clojure's interpose in Ruby"
+  description: "Implementing interpose in Ruby using Enumerable"
 published: true
 slug: clojures-interpose-in-ruby
 category: tbd
 date: 2017-07-22 12:59
+modified: 2017-08-03 10:00
 ---
 
 [`interpose`][interpose] is one of many things I miss about Clojure when I'm writing Ruby.

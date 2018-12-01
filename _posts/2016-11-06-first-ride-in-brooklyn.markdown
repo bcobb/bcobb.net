@@ -2,9 +2,13 @@
 layout: post
 title: "First ride in Brooklyn"
 published: true
+seo:
+  title: "First ride in Brooklyn"
+  description: "I went for a bike ride, and this is what happened"
 slug: first-ride-in-brooklyn
 category: tbd
 date: 2016-11-06 14:38
+modified: 2016-11-06 14:38
 ---
 
 [My wife Sam](https://twitter.com/sabramse) got a job working for the venerable [Storycorps](https://storycorps.org/), so in October, we moved to Brooklyn!

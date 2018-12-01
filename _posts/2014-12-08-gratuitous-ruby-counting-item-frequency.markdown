@@ -3,9 +3,11 @@ layout: post
 title: "Gratuitous Ruby: Counting Item Frequency"
 seo:
   title: "Gratuitous Ruby: Counting Item Frequency"
+  description: "Jotting down a way to compute a histogram in Ruby"
 published: true
 slug: gratuitous-ruby-counting-item-frequency
 date: 2014-12-08 22:41
+modified: 2014-12-08 22:41
 category: misc
 ---
 

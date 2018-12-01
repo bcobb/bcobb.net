@@ -3,9 +3,12 @@ layout: post
 title: "Managing Update Conflicts in Bayou"
 seo:
   title: "Managing Update Conflicts in Bayou"
+  description: |
+    Summary of and reflection on "Managing Update Conflicts in Bayou"
 slug: hacker-school-read-along-managing-update-conflicts-in-bayou
 category: hsreadalong
 date: 2014-11-09 22:30
+modified: 2014-11-09 22:30
 published: true
 ---
 

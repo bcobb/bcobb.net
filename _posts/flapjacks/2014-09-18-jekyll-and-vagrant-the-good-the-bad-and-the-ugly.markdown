@@ -3,9 +3,11 @@ layout: post
 title: "Jekyll and Vagrant: The Good, The Bad, and The Ugly"
 seo:
   title: "Jekyll and Vagrant: The Good, The Bad, and The Ugly"
+  description: "My experience trying to write for a Jekyll site being built in a Vagrant VM"
 slug: jekyll-and-vagrant-the-good-the-bad-and-the-ugly
 published: true
 date: 2014-09-18 21:55
+modified: 2014-09-18 21:55
 category: flapjacks
 author: Brian Cobb
 ---

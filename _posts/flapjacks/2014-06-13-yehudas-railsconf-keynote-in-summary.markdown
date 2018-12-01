@@ -3,9 +3,11 @@ layout: post
 title: Yehuda's Railsconf Keynote, in Summary
 seo:
   title: Yehuda's Railsconf Keynote, in Summary
+  description: Summary of a Yehuda Katz talk.
 slug: yehudas-railsconf-keynote-in-summary
 published: false
 date: 2014-06-14 17:23
+modified: 2014-06-14 17:23
 category: flapjacks
 author: Brian Cobb
 ---

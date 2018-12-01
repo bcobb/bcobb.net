@@ -3,9 +3,11 @@ layout: post
 title: The Idempotency Trap
 seo:
   title: The Idempotency Trap
+  description: How to think intuitively about idempotency
 slug: the-idempotency-trap
 published: true
 date: 2014-07-01 14:02
+modified: 2014-07-01 14:02
 category: flapjacks
 author: Brian Cobb
 ---

@@ -3,8 +3,10 @@ layout: post
 title: "Curry: How Chef Software (Mostly) Automated Their CLA"
 seo:
   title: "Curry: How Chef Software (Mostly) Automated Their CLA"
+  description: "A deep-dive on some workflow automation FullStack built for Chef"
 slug: curry-how-chef-software-mostly-automated-their-cla
 date: 2014-10-24 12:01
+modified: 2014-10-24 12:01
 category: elsewhere
 author: Brian Cobb
 original: http://gofullstack.com/curry-how-chef-software-mostly-automated-their-cla

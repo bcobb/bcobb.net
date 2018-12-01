@@ -3,9 +3,11 @@ layout: post
 title: An approach to solving problems with concurrency/parallelism
 seo:
   title: An approach to solving problems with concurrency/parallelism
+  description: Thinking about concurrency/parallelism
 slug: an-approach-to-solving-problems-with-concurrency-parallelism
 published: false
 date: 2014-08-12 13:01
+modified: 2014-08-12 13:01
 category: flapjacks
 author: Brian Cobb
 ---

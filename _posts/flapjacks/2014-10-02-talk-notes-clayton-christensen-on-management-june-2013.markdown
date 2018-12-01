@@ -3,9 +3,11 @@ layout: post
 title: "Talk Notes: Clayton Christensen on Management (June 2013)"
 seo:
   title: "Talk Notes: Clayton Christensen on Management (June 2013)"
+  description: Notes on a Clayton Christensen talk
 slug: talk-notes-clayton-christensen-on-management-june-2013
 published: false
 date: 2014-10-02 21:54
+modified: 2014-10-02 21:54
 category: flapjacks
 author: Brian Cobb
 ---

@@ -3,7 +3,8 @@
   <link href="//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic" rel="stylesheet" type="text/css">
 {% include meta.html %}
 
-  <title>bcobb: {{ page.seo.title }}</title>
+  <title>bcobb: {{ page.seo.title | escape }}</title>
+
   {% css main %}
   {% css syntax %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.path }}feed.xml">
@@ -12,6 +13,25 @@
   {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% endif %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ page.seo.title | escape }}",
+      {% if page.date %}
+      "datePublished": "{{ page.date | date: "%Y-%m-%dT%H:%M:00%z" }}",
+      {% endif %}
+      {% if page.modified %}
+      "dateModified": "{{ page.modified | date: "%Y-%m-%dT%H:%M:00%z" }}",
+      {% endif %}
+      "author": {
+        "@type": "Person",
+        "name": "Brian Cobb"
+      },
+      "description": "{{ page.seo.description | escape }}"
+    }
+  </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

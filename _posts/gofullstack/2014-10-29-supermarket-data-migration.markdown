@@ -3,8 +3,10 @@ layout: post
 title: "Supermarket Data Migration"
 seo:
   title: "Supermarket Data Migration"
+  description: "A deep-dive on how FullStack migrated Chef Supermarket data"
 slug: chef-supermarket-data-migration
 date: 2014-10-29 14:57
+modified: 2014-10-29 14:57
 category: elsewhere
 author: Brian Cobb
 original: http://gofullstack.com/chef-supermarket-data-migration

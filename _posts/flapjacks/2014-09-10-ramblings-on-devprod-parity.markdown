@@ -3,9 +3,11 @@ layout: post
 title: Ramblings on dev/prod parity
 seo:
   title: Ramblings on dev/prod parity
+  description: Dev/prod parity sure seems far off
 slug: ramblings-on-devprod-parity
 published: true
 date: 2014-09-10 13:31
+modified: 2014-09-10 13:31
 category: flapjacks
 author: Brian Cobb
 ---

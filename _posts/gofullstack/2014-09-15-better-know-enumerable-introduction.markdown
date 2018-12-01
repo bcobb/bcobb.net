@@ -3,8 +3,10 @@ layout: post
 title: "Better Know Enumerable: Introduction"
 seo:
   title: "Better Know Enumerable: Introduction"
+  description: "An introduction to enumerable"
 slug: better-know-enumerable-introduction
 date: 2014-09-17 08:20
+modified: 2014-09-17 08:20
 category: elsewhere
 original: http://gofullstack.com/better-know-enumerable-introduction
 author: Brian Cobb

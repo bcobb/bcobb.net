@@ -3,8 +3,10 @@ layout: post
 title: "Better Know Enumerable: Partition"
 seo:
   title: "Better Know Enumerable: Partition"
+  description: "Examples on how to use Ruby's Enumerable module"
 slug: better-know-enumerable-partition
 date: 2014-10-03 09:04
+modified: 2014-10-03 09:04
 category: elsewhere
 author: Brian Cobb
 original: http://gofullstack.com/better-know-enumerable-partition

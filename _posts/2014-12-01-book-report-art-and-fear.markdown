@@ -2,10 +2,13 @@
 layout: post
 title: "Book Report: Art &amp; Fear"
 seo:
-  title: "Book Report: Art &amp; Fear"
+  title: "Book Report: Art & Fear"
+  description: |
+    Notes on "Art & Fear"
 published: true
 slug: book-art-and-fear
 date: 2014-12-01 14:00
+modified: 2014-12-01 14:00
 category: misc
 ---
 
