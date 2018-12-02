@@ -160,12 +160,12 @@ ul.posts .index-date {
 
 a {
   padding: 2px 0;
-  color: cornflowerblue;
-  text-decoration: none;
+  color: #3B28CC;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: slateblue;
+  color: #1d2951;
 }
 
 figure {
