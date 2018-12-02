@@ -19,6 +19,10 @@
       "@context": "http://schema.org",
       "@type": "BlogPosting",
       "headline": "{{ page.seo.title | escape }}",
+      "image": "",
+      "publisher": {
+        "name": "Brian Cobb"
+      },
       {% if page.date %}
       "datePublished": "{{ page.date | date: "%Y-%m-%dT%H:%M:00%z" }}",
       {% endif %}
