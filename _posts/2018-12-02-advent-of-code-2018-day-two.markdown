@@ -8,6 +8,7 @@ published: true
 slug: advent-of-code-2018-day-two
 category: tbd
 date: 2018-12-02 13:54
+modified: 2018-12-02 13:54
 ---
 
 Today: take a list of strings and find those which contain any letters that appear exactly two or three times.
