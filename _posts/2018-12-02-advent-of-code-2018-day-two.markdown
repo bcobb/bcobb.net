@@ -42,14 +42,14 @@ The second problem asserts that there are only two strings in the corpus which d
 
 I ended up zig-zagging in [my solution][secondsol] for this one.
 
-At a high level, I knew that I wanted to turn the list of words into a list of all combinations of _pairs_ of words, find the pair that differed "pairwise" only by one character, and return the letters they shared in common.
+At a high level, I knew that I wanted to turn the list of words into a list of all combinations of _pairs_ of words, find the pair that differed only by one character, and return the letters they shared in common.
 
-Calculating the pairwise difference, and finding the two words that had a pairwise difference of 1 was pretty straightforward.
+Calculating the difference, and finding the two words that had a difference of 1 was pretty straightforward.
 But I struggled with turning that pair into a string of common letters.
-Mainly, I kept balking at writing a function that felt like it was duplicating too much of my `pairwiseDifference` function.
+Mainly, I kept balking at writing a function that felt like it was duplicating too much of my `positionalEqualities` function.
 This led me to temporarily turn all of my `Array`s into `Lists` so that I could `List.filter`, but ultimately I reverted that change and decided to suffer the duplication to solve the problem.
 
-If I was to go back and refactor, I would take a similar approach to my [Clojure solution][clj]: reify the concept of `pairwise` words and operate on those.
+If I was to go back and refactor, I would take a similar approach to my [Clojure solution][clj]: reify the concept of `pairwise` words and pass _those_ around instead of "combos" of the original words.
 
 [find]: https://reasonml.github.io/api/Map.Make.html#VALfind
 [yesterday]: /advent-of-code-2018-day-one/
