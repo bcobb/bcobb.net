@@ -14,5 +14,5 @@ if [ -f $filename ] ; then
   echo "Stopping to avoid overwriting $filename"
   exit 1
 else
-  echo -e $frontmatter > $filename
+  echo -e "$frontmatter" > $filename
 fi
