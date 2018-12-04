@@ -2,8 +2,8 @@
 layout: post
 title: "Advent of Code 2018, Day Two"
 seo:
- title: "Advent of Code 2018, Day Two"
- description: "Talking through my solution to the second day of Advent of Code 2018"
+  title: "Advent of Code 2018, Day Two"
+  description: "Talking through my solution to the second day of Advent of Code 2018"
 published: true
 slug: advent-of-code-2018-day-two
 category: tbd
