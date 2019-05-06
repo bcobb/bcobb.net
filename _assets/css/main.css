@@ -53,7 +53,6 @@ body {
 }
 
 .site {
-  max-width: 1024px;
   padding: 2em;
 }
 
@@ -135,11 +134,13 @@ blockquote {
 
 h1 {
   letter-spacing: 0;
+  line-height: 1.33;
 }
 
 h2 {
   letter-spacing: 0;
   margin-bottom: .5em;
+  line-height: 1.33;
 }
 
 h1, h2, h3, h4 {
@@ -148,10 +149,15 @@ h1, h2, h3, h4 {
 }
 
 ul.posts .index-date {
-  width: 150px;
+  width: 90px;
   font-style: italic;
-  display: inline-block;
+  display: block;
   margin-right: 1em;
+  font-size: 16px;
+}
+
+ul.posts li {
+  margin-bottom: 0.75em;
 }
 
 .footnotes {
@@ -192,7 +198,7 @@ ul.posts li {
 }
 
 ul.posts li a {
-  display: inline-block;
+  line-height: 1.33;
 }
 
 .description.flapjack {
@@ -243,13 +249,17 @@ hr {
 @media (min-width: 667px) {
   .site {
     width: 60%;
-    max-width: 1024px;
+    max-width: 667px;
     margin: 1em auto;
     padding: 0;
   }
 
   ul.posts {
     font-size: 20px;
+  }
+
+  ul.posts .index-date {
+    font-size: 14px;
   }
 
   #post code {
