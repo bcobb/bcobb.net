@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 {% include meta.html %}
 
-  <title>bcobb: {{ page.seo.title }}</title>
+  <title>bcobb: {{ page.seo.title | escape }}</title>
+
   {% include styles.html %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.path }}feed.xml">
   {% if page.canonical_path %}
@@ -11,21 +13,22 @@
   {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% endif %}
+
   {% include ga.html %}
 </head>
 <body>
   <div class="site">
     <h1 class="title"><a href="/">bcobb</a></h1>
 
-    {{ content }}
+    <div id="post">
+      {% if page.title %}
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      {% endif %}
+
+      {{ content }}
+    </div>
 
     {% include footer.html %}
-    <p class="credits">
-      Thanks to <a href="http://michaelrbernste.in">MRB</a> for the <a href="https://github.com/mrb/mrb.github.com/">foundation</a> of this blog.
-    </p>
-    <p class="credits">
-    The "b" stands for <a href="{{ site.path }}about">Brian</a>.
-    </p>
   </div>
 </body>
 </html>

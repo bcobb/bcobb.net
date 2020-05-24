@@ -9,6 +9,7 @@ exclude:
   - README
   - log/
   - tmp/
+  - bcobb/
 markdown: redcarpet
 permalink: "/:title/"
 gems:
@@ -21,3 +22,6 @@ redcarpet:
 assets:
   assets:
     - "*.css"
+collections:
+  singletons:
+    output: true

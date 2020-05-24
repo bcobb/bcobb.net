@@ -1,15 +1,14 @@
 ---
-layout: post
+layout: page
 seo:
   title: about
+  description: About Brian
+promises:
+  nosyntax: true
 ---
 
-<p>
-My name's Brian Cobb, and I'm a programmer based in Brooklyn, NY.
-My interests lie somewhere in the intersection of mathematics, programming, communication, and design.
-I also enjoy riding bikes, playing baseball, and making pizzas.
-</p>
-
-<p>
-If you'd like to get in touch, either grab me on <a href="https://twitter.com/bcobb">the tooter</a> or send me an email at bcobb@uwalumni.com.
-</p>
+{% for singleton in site.singletons %}
+  {% if singleton.slug == "about" %}
+    {{ singleton.content }}
+  {% endif %}
+{% endfor %}

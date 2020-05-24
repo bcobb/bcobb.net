@@ -9,6 +9,8 @@ slug: authenticity-and-pizza
 category: tbd
 date: 2019-05-05 21:00
 modified: 2019-05-05 21:00
+promises:
+  nosyntax: true
 ---
 
 I really enjoyed these two posts from last year by Toby Shorin: [After Authenticity](https://subpixel.space/entries/after-authenticity/) and [The Disbeliever's Guide to Authenticity](https://subpixel.space/entries/the-disbelievers-guide-to-authenticity/).
