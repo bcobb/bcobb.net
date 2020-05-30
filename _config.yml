@@ -22,6 +22,8 @@ redcarpet:
 assets:
   assets:
     - "*.css"
+    - "*.svg"
+    - "*.png"
 collections:
   singletons:
     output: true
