@@ -19,7 +19,7 @@ I remember seeing it linked on Twitter some time ago, when someone excerpted thi
 
 A fair sentiment, I think.
 
-Aldrich doesn't argue that objects are a better or worse tool for data abstraction than ADTs (as David says in the introductory post, this paper really does complement [last week's](/hacker-school-read-along-on-understanding-data-abstraction/)); rather, he argues that objects emerge naturally out of a need to create "service abstractions."
+Aldrich doesn't argue that objects are a better or worse tool for data abstraction than ADTs (as David says in the introductory post, this paper really does complement [last week's]({{ site.url }}/hacker-school-read-along-on-understanding-data-abstraction/)); rather, he argues that objects emerge naturally out of a need to create "service abstractions."
 For instance, objects lend themselves well to plugin architectures: to "plug in" a new capability, one need only supply an object that responds reasonably to a set of messages sent by the system to which it is plugged.
 Crucially, the plugged-in object could very well be a whole service in its own right, so long as it responds to the right messages in a reasonable way---hence, service abstraction.
 _This_ is the interoperability---the interoperability between systems, and not just between data structures---that makes objects so powerful.

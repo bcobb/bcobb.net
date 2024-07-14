@@ -71,13 +71,13 @@ Overall, I'm pretty sure there's a lot that's not quite idiomatic about these so
 The two specific questions I have are:
 
 1. is there a more direct way to turn the change strings into a frequency change that can be applied directly to a frequency?
-Follow-up: Is this what applicatives are for?
+   Follow-up: Is this what applicatives are for?
 1. is there a more functional way to churn through the infinite Stream, collecting intermediate frequencies, and stopping when I find a duplicate?
-Related: is it possible to get away without using any `ref`s?
+   Related: is it possible to get away without using any `ref`s?
 
 [aoc]: https://adventofcode.com/2018
 [wastl]: http://was.tl/
-[2017]: /advent-of-code-2017
+[2017]: {{site.url}}/advent-of-code-2017
 [reason]: https://reasonml.github.io
 [reasonsolution]: https://github.com/bcobb/advent-of-code-2018/blob/201554580b0eaf9e14c5c979107c20c94e6f22a3/src/reason/One.re
 [stream]: https://reasonml.github.io/api/Stream.html

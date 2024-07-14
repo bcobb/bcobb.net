@@ -53,7 +53,7 @@ This led me to temporarily turn all of my `Array`s into `Lists` so that I could 
 If I was to go back and refactor, I would take a similar approach to my [Clojure solution][clj]: reify the concept of `pairwise` words and pass _those_ around instead of "combos" of the original words.
 
 [find]: https://reasonml.github.io/api/Map.Make.html#VALfind
-[yesterday]: /advent-of-code-2018-day-one/
+[yesterday]: {{site.url}}/advent-of-code-2018-day-one/
 [firstsol]: https://github.com/bcobb/advent-of-code-2018/blob/0c4d587b38cdd053f6c7e2d0995e8e4e6ad4c2f8/src/reason/Two.re
 [secondsol]: https://github.com/bcobb/advent-of-code-2018/blob/9c83ba0cec34170a02cf17ebd51ad4e1105347a0/src/reason/Two.re
 [clj]: https://github.com/bcobb/advent-of-code-2018/blob/8f2fa8e76ea655eef253d13a153872cf4629306b/src/clj/two.clj

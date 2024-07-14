@@ -25,7 +25,7 @@ By Iverson's characteristics (which he notes are not exhaustive, but certainly n
 Unlike the notation in Iverson's paper, Harel's notation is predominately _visual_[^2].
 Here is a cropping of the Statechart that describes the author's digital wristwatch:
 
-![Statechart example](/images/statechart-example.png)
+![Statechart example]({% asset_path statechart-example.png %})
 
 The arrows whose tails are dots denote the entry point of that subchart.
 In this case, the watch is initially dead; when the battery is inserted, the light is initially `off`; the power indicator is initially `OK`.
@@ -58,12 +58,9 @@ For folks interested in doing so, I think Harel's paper is a great place to star
 
 [_Notation as a tool of thought_]: http://www.eecg.toronto.edu/~jzhu/csc326/readings/iverson.pdf
 [Iverson]: http://en.wikipedia.org/wiki/Kenneth_E._Iverson
-
 [_Statecharts: A Visual Formalism For Complex Systems_]: http://www.inf.ed.ac.uk/teaching/courses/seoc/2004_2005/resources/statecharts.pdf
 [Harel]: http://www.wisdom.weizmann.ac.il/~harel/
-
 [on GitHub]: https://github.com/search?utf8=%E2%9C%93&q=statechart
-
 [Bret Victor]: http://worrydream.com
 [Toby Schachman]: http://tobyschachman.com
 [Shadershop]: http://tobyschachman.com/Shadershop

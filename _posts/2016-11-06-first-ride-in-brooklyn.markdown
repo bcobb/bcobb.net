@@ -39,7 +39,7 @@ Other highlights of the ride:
 And, of course, reaching my destination felt great.
 
 <figure>
-    <img src="/images/d-coluccio-and-sons-storefront.png" alt="D. Coluccio & Sons storefront">
+    <img src="{% asset_path 'd-coluccio-and-sons-storefront.png' %}" alt="D. Coluccio & Sons storefront">
     <figcaption><a href="https://www.instagram.com/p/BMek3Q6BWgk/">D. Coluccio &amp; Sons storefront</a></figcaption>
 </figure>
 

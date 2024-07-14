@@ -57,16 +57,15 @@ claims
    );
 ```
 
-
 After today, there are a couple things I need to look into:
 
 1. is there an idiomatic/safe way to add functions to a module within a certain scope?
-I would have liked to implement `List.every` to declutter the body of the function for the second solution.
+   I would have liked to implement `List.every` to declutter the body of the function for the second solution.
 1. what is the story around lazy collections in Reason/OCaml?
-One thing I like about [my Clojure solution][clojuresolution] is that it's not necessary to distinguish between `find` and `filter | first` thanks to lazy collections.
+   One thing I like about [my Clojure solution][clojuresolution] is that it's not necessary to distinguish between `find` and `filter | first` thanks to lazy collections.
 
 And I need to experiment more with the pipe operator to get a better feel for when it helps or harms readability.
 
 [reasonsolution]: https://github.com/bcobb/advent-of-code-2018/blob/f1784a85d6e9fbd3656698959a06677b08d2f290/src/reason/Three.re
-[yesterday]: /advent-of-code-2018-day-two
+[yesterday]: {{site.url}}/advent-of-code-2018-day-two
 [clojuresolution]: https://github.com/bcobb/advent-of-code-2018/blob/f1784a85d6e9fbd3656698959a06677b08d2f290/src/clj/three.clj

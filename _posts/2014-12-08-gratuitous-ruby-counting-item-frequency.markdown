@@ -14,7 +14,6 @@ category: misc
 Tonight on Twitter, [@jessitron] posted the following:
 
 <blockquote class="twitter-tweet" lang="en"><p>Counting in <a href="https://twitter.com/hashtag/Ruby?src=hash">#Ruby</a>:&#10;[&quot;a&quot;,&quot;b&quot;,&quot;a&quot;].inject(Hash.new(0)) { |m,o| m[o] += 1; m }&#10; =&gt; {&quot;a&quot;=&gt;2, &quot;b&quot;=&gt;1}&#10;<a href="https://twitter.com/mattruzicka">@mattruzicka</a> <a href="https://twitter.com/hashtag/STLRuby?src=hash">#STLRuby</a></p>&mdash; Jessica Kerr (@jessitron) <a href="https://twitter.com/jessitron/status/542150589728440320">December 9, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The other week, I needed to do exactly this, and came up with a slightly different approach.
 Here's my (gently elaborated) version of Jessica's snippet:

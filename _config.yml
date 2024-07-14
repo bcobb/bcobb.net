@@ -1,7 +1,26 @@
+title: bcobb.net
 name: bcobb.net
-description: Brian Cobb writes about stuff.
-url: https://www.bcobb.net
-path: "/"
+description: >-
+  Brian Cobb writes about stuff.
+url: "https://www.bcobb.net"
+permalink: "/:title/"
+collections:
+  singletons:
+    output: false
+
+markdown: kramdown
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+
+assets:
+  sources:
+    - _assets/css
+    - _assets/images
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -10,20 +29,4 @@ exclude:
   - log/
   - tmp/
   - bcobb/
-markdown: redcarpet
-permalink: "/:title/"
-gems:
-  - jekyll-sitemap
-  - jekyll-assets
-redcarpet:
-  extensions:
-    - footnotes
-    - smart
-assets:
-  assets:
-    - "*.css"
-    - "*.svg"
-    - "*.png"
-collections:
-  singletons:
-    output: true
+  - vendor/

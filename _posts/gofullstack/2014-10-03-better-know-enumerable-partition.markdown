@@ -20,7 +20,7 @@ tags:
   - Ruby
 ---
 
-In the [introduction to Better Know Enumerable](/better-know-enumerable-introduction), I claimed that `Enumerable` enables a shift from imperative to functional programming.
+In the [introduction to Better Know Enumerable]({{ site.url }}/better-know-enumerable-introduction), I claimed that `Enumerable` enables a shift from imperative to functional programming.
 In this post, I'd like to demonstrate this sort of shift by using the `partiton` method to replace imperatively splitting a collection into two complementary parts.
 
 The documentation for `partition` shows a contrived example:
