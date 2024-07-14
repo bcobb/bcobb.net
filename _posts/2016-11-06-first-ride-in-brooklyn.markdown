@@ -11,7 +11,7 @@ date: 2016-11-06 14:38
 modified: 2016-11-06 14:38
 ---
 
-[My wife Sam](https://twitter.com/sabramse) got a job working for the venerable [Storycorps](https://storycorps.org/), so in October, we moved to Brooklyn!
+Sam got a job working for the venerable [Storycorps](https://storycorps.org/), so in October, we moved to Brooklyn!
 Today, I was able to go on my first bike ride in town.
 
 Why is this notable?
