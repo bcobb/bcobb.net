@@ -25,7 +25,7 @@ By Iverson's characteristics (which he notes are not exhaustive, but certainly n
 Unlike the notation in Iverson's paper, Harel's notation is predominately _visual_[^2].
 Here is a cropping of the Statechart that describes the author's digital wristwatch:
 
-![Statechart example]({% asset_path statechart-example.png %})
+![Statechart example]({{ site.url }}{% asset_path statechart-example.png %})
 
 The arrows whose tails are dots denote the entry point of that subchart.
 In this case, the watch is initially dead; when the battery is inserted, the light is initially `off`; the power indicator is initially `OK`.

@@ -47,14 +47,14 @@ If the server doesn't have a cached response, the request will be forwarded on t
 The origin's response might be cached before being forwarded to the client.
 
 <figure class="full-width">
-  <img src="{% asset_path edge-cache-miss.png %}" alt="Diagram illustrating a cache miss">
+  <img src="{{ site.url }}{% asset_path edge-cache-miss.png %}" alt="Diagram illustrating a cache miss">
   <figcaption>Forwarding a request to the origin server when there's nothing cached for the request.</figcaption>
 </figure>
 
 But, if the edge server has a cached response for a URL, the response will be served without needing to forward the request through to the origin server.
 
 <figure class="full-width">
-  <img src="{% asset_path edge-cache-hit.png %}" alt="Diagram illustrating a cache hit">
+  <img src="{{ site.url }}{% asset_path edge-cache-hit.png %}" alt="Diagram illustrating a cache hit">
   <figcaption>Returning a cached response without consulting the origin.</figcaption>
 </figure>
 
