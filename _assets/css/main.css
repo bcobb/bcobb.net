@@ -205,7 +205,7 @@ figure.full-width {
   text-align: center;
 }
 
-figure > img {
+figure > img, figure > a > img {
   width: 100%;
 }
 
@@ -305,4 +305,12 @@ hr {
   #post code {
     font-size: 80%;
   }
+}
+
+#post ol > li > ol {
+  margin-bottom: 0;
+}
+
+ol > li > ol > li {
+  list-style-type: lower-alpha;
 }
