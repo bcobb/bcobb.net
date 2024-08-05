@@ -3,7 +3,7 @@ layout: post
 title: "My favorite bike route to Jackson Heights (from Downtown Brooklyn)"
 seo:
   title: "My favorite bike route to Jackson Heights (from Downtown Brooklyn)"
-  description: "My favorite bike route to Jackson Heights (from Downtown Brooklyn)"
+  description: "A work in progress, but an improvement on what Google Maps has to offer"
 published: true
 slug: my-favorite-bike-route-to-jackson-heights-from-downtown-brooklyn
 category: cycling
