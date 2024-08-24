@@ -18,13 +18,15 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 
 [Vikram]: https://vikramoberoi.com
 
+**August 24, 2024 update**: after a few commutes with a new route, I've updated the post-Kosciuszko Bridge route to be a bit simpler, and to skip Queens Blvd entirely.
+
 ## The route
 
 <figure class="full-width">
-  <a href="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights.png' %}" target="_blank">
-    <img src="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights.png' %}" alt="Map of route from Downtown Brooklyn to Jackson Heights">
+  <a href="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights-v2.png' %}" target="_blank">
+    <img src="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights-v2.png' %}" alt="Map of route from Downtown Brooklyn to Jackson Heights">
   </a>
-  <figcaption><a href="https://www.strava.com/routes/3245139261935083646">Strava Route from Downtown Brooklyn to Jackson Heights</a></figcaption>
+  <figcaption><a href="https://www.strava.com/routes/3262517455704341840">Strava Route from Downtown Brooklyn to Jackson Heights</a></figcaption>
 </figure>
 
 1. Starting from around Fort Greene Park, make your way north to Flushing Ave.
@@ -46,8 +48,24 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 1. When the path ends, cross over to the sidewalk path on the cemetery side of the street.
 1. Continue onto the pedestrian overpass over the Long Island Expressway.
 1. This dumps out onto a bidirectional sidewalk path. Stay on the path under the bridge.
-1. After the bridge, cross Laurel Hill Blvd, and hook right to cross traffic so that you're riding north on the right side of 43rd St.
+1. After the bridge, cross Laurel Hill Blvd, and hook right to cross traffic on 43rd St so that you're riding north on the right side of 43rd St.
    1. There's a green box to the side of the oncoming bike lane traffic to wait for the pedestrian signal to cross.
+1. Head north on 43rd St, crossing Greenpoint Ave, Queens Blvd, and Skillman Ave.
+   1. The light timing on this stretch is unfortunate, and it's hard to get a good rhythm going.
+1. Turn right on Barnett Ave, and follow the bike lane onto 39th Ave.
+1. Follow 39th Ave until it intersects with Woodside Ave.
+1. Turn left on Woodside Ave and take the first right to get back on 39th Ave.
+1. Keep going on 39th Ave, and turn left on 60th St.
+1. Cross Broadway on 60th St, and turn right on 34th Ave.
+   1. From here until the BQE, there's a parking lane-protected bike lane.
+1. Once you cross under the BQE, you're in Jackson Heights!
+1. The Strava route continues on the 34th Ave traffic-limited street until Travers Park.
+1. _Fin_.
+
+### Previously
+
+In the [original version](https://www.strava.com/routes/3245139261935083646), I would turn off of 43rd St after a few blocks:
+
 1. Head up to the light and turn right on 50th Ave.
 1. Bike four blocks and turn left on 47th St. There's a nice painted bike line to distinguish it from other left turns.
 1. Head through the 48th Ave intersection and then take a right on 47th Ave.
@@ -59,11 +77,10 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 1. Turn right on 39th Ave.
    1. That is, when you get to the bridge, turn right to go under it. The road surface here is terrible.
 1. Ride two blocks and turn left on 60th St.
-1. Cross Broadway on 60th St, and turn right on 34th Ave.
-   1. From here until the BQE, there's a parking lane-protected bike lane.
-1. Once you cross under the BQE, you're in Jackson Heights!
-1. The Strava route continues on the 34th Ave traffic-limited street until Travers Park.
-1. _Fin_.
+
+And then pick up at "Cross Broadway"...
+
+The new route is a bit slower, but has fewer turns, better roads, and does not take Queens Blvd.
 
 ## What does Google say?
 
@@ -124,5 +141,3 @@ The Queensboro Bridge is my last resort, and I'll only take it if I want to go s
 ## What's next?
 
 - I don't love riding on Kent Ave, so I'm going to experiment with cutting east at the Williamsburg Bridge, and taking Borinquen Pl to Grand St before going north on Manhattan Ave.
-- I'd like to try crossing Queens Blvd on 47th St, instead of zig-zagging to turn onto Queens Blvd at 50th. Then I'll try going all the way to 39th Ave, and following it until 60th St.
-  - I've been going on runs recently that follow 39th Ave on part of this route, and it doesn't look too shabby.
