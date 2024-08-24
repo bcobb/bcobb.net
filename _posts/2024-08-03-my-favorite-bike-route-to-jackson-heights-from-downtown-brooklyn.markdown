@@ -26,7 +26,7 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
   <a href="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights-v2.png' %}" target="_blank">
     <img src="{{ site.url }}{% asset_path 'brooklyn-to-jackson-heights-v2.png' %}" alt="Map of route from Downtown Brooklyn to Jackson Heights">
   </a>
-  <figcaption><a href="https://www.strava.com/routes/3262517455704341840">Strava Route from Downtown Brooklyn to Jackson Heights</a></figcaption>
+  <figcaption><a href="https://www.strava.com/routes/3262517455704341840" target="_blank">Strava Route from Downtown Brooklyn to Jackson Heights</a></figcaption>
 </figure>
 
 1. Starting from around Fort Greene Park, make your way north to Flushing Ave.
