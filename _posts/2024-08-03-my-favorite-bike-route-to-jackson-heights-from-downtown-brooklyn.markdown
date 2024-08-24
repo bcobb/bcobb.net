@@ -46,8 +46,8 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 1. When the path ends, cross over to the sidewalk path on the cemetery side of the street.
 1. Continue onto the pedestrian overpass over the Long Island Expressway.
 1. This dumps out onto a bidirectional sidewalk path. Stay on the path under the bridge.
-1. After the bridge, cross Laurel Hill Blvd, and hook right so that you're riding on the right side of 43rd St.
-   1. There's a green box to the side of the oncoming bike lane traffic to wait for the pedestrian signal.
+1. After the bridge, cross Laurel Hill Blvd, and hook right to cross traffic so that you're riding north on the right side of 43rd St.
+   1. There's a green box to the side of the oncoming bike lane traffic to wait for the pedestrian signal to cross.
 1. Head up to the light and turn right on 50th Ave.
 1. Bike four blocks and turn left on 47th St. There's a nice painted bike line to distinguish it from other left turns.
 1. Head through the 48th Ave intersection and then take a right on 47th Ave.
