@@ -8,7 +8,7 @@ published: true
 slug: my-favorite-bike-route-to-jackson-heights-from-downtown-brooklyn
 category: cycling
 date: 2024-08-03 12:50
-modified: 2024-08-03 12:50
+modified: 2024-08-24 16:00
 ---
 
 At some point I'll write about how I got back into cycling after moving to Brooklyn in 2016, riding a couple times, and then basically never riding again until 2020.
