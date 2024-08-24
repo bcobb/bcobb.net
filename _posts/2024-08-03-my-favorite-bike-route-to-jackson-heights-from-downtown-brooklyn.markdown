@@ -59,7 +59,7 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 1. Turn right on 39th Ave.
    1. That is, when you get to the bridge, turn right to go under it. The road surface here is terrible.
 1. Ride two blocks and turn left on 60th St.
-1. Cross Broadway on 60th St, and turn left on 34th Ave.
+1. Cross Broadway on 60th St, and turn right on 34th Ave.
    1. From here until the BQE, there's a parking lane-protected bike lane.
 1. Once you cross under the BQE, you're in Jackson Heights!
 1. The Strava route continues on the 34th Ave traffic-limited street until Travers Park.
