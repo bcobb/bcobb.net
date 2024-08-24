@@ -40,7 +40,7 @@ I am not done experimenting with it, and have a few tweaks I plan to make on my 
 1. Turn left on Nassau Ave and ride for about a mile through the hustle and bustle of Greenpoint.
 1. Turn right on Apollo St, and ride for a block.
 1. Hook a sharp left onto the Meeker Ave sidewalk which also has a painted bike path.
-1. Follow the bike to cross Van Dam St.
+1. Follow the bike lane to cross Van Dam St.
 1. Get on the Kosciuszko Bridge path, and ride across the bridge.
 1. After weaving through the gate at the bridge exit, stay straight on the sidewalk bike path.
 1. When the path ends, cross over to the sidewalk path on the cemetery side of the street.
